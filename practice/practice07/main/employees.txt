@@ -1,0 +1,6 @@
+Salaried 101 Benimaru 5000
+Hourly 102 Rimuru 20 160
+Commission 103 Shion 2000 15000 0.05
+Salaried 104 Shuna 7000
+Hourly 105 Killua 25 140
+Commission 106 Hisoka 1800 12000 0.07
