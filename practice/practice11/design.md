@@ -80,6 +80,7 @@ private:
     std::vector<Customer> customers;
 };
 
+```mermaid
 classDiagram
     class Game {
         - string title
@@ -116,3 +117,4 @@ classDiagram
     LendingRecord --> Game : manages
     LendingRecord --> Customer : manages
     Customer --> Game : borrows
+    ```
