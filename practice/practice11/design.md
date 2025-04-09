@@ -36,7 +36,7 @@ The system manages three primary entities: **Game**, **Customer**, and **Lending
 
 ### `Game`
 
-```cpp
+    ```cpp
 class Game {
 public:
     Game(const std::string& title, int totalCopies);
