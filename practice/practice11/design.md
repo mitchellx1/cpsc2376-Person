@@ -82,39 +82,39 @@ private:
 
 ```mermaid
 classDiagram
-    class Game {
-        - string title
-        - int totalCopies
-        - int availableCopies
-        + Game(string, int)
-        + getTitle() string
-        + getAvailableCopies() int
-        + checkoutCopy() void
-        + returnCopy() void
-    }
+class Game {
+    - string title
+    - int totalCopies
+    - int availableCopies
+    + Game(string, int)
+    + getTitle() string
+    + getAvailableCopies() int
+    + checkoutCopy() void
+    + returnCopy() void
+}
 
-    class Customer {
-        - string name
-        - vector~string~ borrowedGames
-        + Customer(string)
-        + getName() string
-        + borrowGame(string) void
-        + returnGame(string) void
-        + getBorrowedGames() vector~string~
-    }
+class Customer {
+    - string name
+    - vector~string~ borrowedGames
+    + Customer(string)
+    + getName() string
+    + borrowGame(string) void
+    + returnGame(string) void
+    + getBorrowedGames() vector~string~
+}
 
-    class LendingRecord {
-        - vector~Game~ games
-        - vector~Customer~ customers
-        + checkoutGame(string, string) void
-        + returnGame(string, string) void
-        + listBorrowedGames() void
-        + listAvailableGames() void
-        + addGame(Game) void
-        + addCustomer(Customer) void
-    }
+class LendingRecord {
+    - vector~Game~ games
+    - vector~Customer~ customers
+    + checkoutGame(string, string) void
+    + returnGame(string, string) void
+    + listBorrowedGames() void
+    + listAvailableGames() void
+    + addGame(Game) void
+    + addCustomer(Customer) void
+}
 
-    LendingRecord --> Game : manages
-    LendingRecord --> Customer : manages
-    Customer --> Game : borrows
-    ```
+LendingRecord --> Game : manages
+LendingRecord --> Customer : manages
+Customer --> Game : borrows
+```
