@@ -38,7 +38,7 @@ This version includes a graphical interface using SDL2, a level progression syst
 
 ## 📷 Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot1.png)
 
 
 ## 🧠 Notes
